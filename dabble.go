@@ -80,6 +80,10 @@ func getPrime() {
 		fmt.Println("\t Both Numbers must be greater than 2.")
 		return
 	}
+	if max <= min {
+		fmt.Print("\n\t [-] Error of bounds values. ")
+		return
+	}
 	for min <= max {
 		isPrime := true
 		for i := 2; i <= int(math.Sqrt(float64(min))); i++ {
