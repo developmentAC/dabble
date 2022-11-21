@@ -15,6 +15,8 @@ GitHub link: https://github.com/developmentAC/dabble
 ## Table of contents
 
 * [Overview](#overview)
+* [Executing the Program](#Executing-the-Program)
+* [Functionality](#Functionality)
 
 ## Overview
 
