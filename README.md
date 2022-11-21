@@ -52,6 +52,38 @@ And you will see the following,
  [+] Enter a system command (help) :
 ```
 
+## Functionality
+
+* Find prime numbers in a defined range.
+
+```
+	 [+] Finding all prime numbers between two values
+	 Enter a lower bounds :3
+
+	 Enter an upper bounds for a number :10
+
+ 3 
+ 5 
+ 7 
+```
+
+* Find a range of random numbers in a defined range.
+```
+	 We will find n random numbers between lower a and upper bounds
+	 Enter a lower bounds :2
+
+	 Enter an upper bounds for a number :10
+
+	 Number of random numbers to create :4
+
+3
+9
+9
+5
+```
+
+
+
 ## A work in progress
 
 Check back often to see the evolution of the project!! BeagleTM is a work-in-progress. Updates to the methods and tests for the code will come soon and I will continue to update the repository with updates. If you would like to contribute to this project, __then please do!__ For instance, if you see some low-hanging fruit or task that you could easily complete, that could add value to the project, then I would love to have your insight.

@@ -185,8 +185,8 @@ func getRandomNumber() {
 		number_slice = append(number_slice, randomNum)
 		fmt.Print("\n", randomNum)
 	}
-	fmt.Print("\n Random numbers : ", number_slice)
-	numAnalysis(number_slice)
+	// fmt.Print("\n Random numbers : ", number_slice)
+	// numAnalysis(number_slice) TODO
 }
 
 func numAnalysis(number_slice []int) {
