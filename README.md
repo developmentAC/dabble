@@ -60,29 +60,40 @@ And you will see the following,
 * Find prime numbers in a defined range.
 
 ```
+ [+] Enter a system command (help) :prime
 	 [+] Finding all prime numbers between two values
 	 Enter a lower bounds :3
 
-	 Enter an upper bounds for a number :10
+	 Enter an upper bounds for a number :30
 
- 3 
- 5 
- 7 
+Data
+3 
+5 
+7 
+11 
+13 
+17 
+19 
+23 
+29 
 ```
 
 * Find a range of random numbers in a defined range.
 ```
+ [+] Enter a system command (help) :ran
 	 We will find n random numbers between lower a and upper bounds
-	 Enter a lower bounds :2
+	 Enter a lower bounds :3
 
 	 Enter an upper bounds for a number :10
 
-	 Number of random numbers to create :4
+	 Number of random numbers to create :5
 
-3
-9
+Data
 9
 5
+4
+3
+9
 ```
 
 
