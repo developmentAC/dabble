@@ -24,7 +24,7 @@ func printMenu() {
 	syscmds_map["square"] = ":Draw a square"
 	syscmds_map["ffile"] = ":Create a file with a fortune in it"
 	syscmds_map["ran"] = ":Create n random numbers between min and max bounds"
-	syscmds_map["prime"] = ":Create a random prime number"
+	syscmds_map["prime"] = ":Create n random prime numbers between min and max bounds"
 	fmt.Print(("\n [+] System commands:"))
 	for i := range syscmds_map {
 		print("\n\t [+=+] ", i, " ", syscmds_map[i])
