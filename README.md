@@ -30,7 +30,7 @@ In this (on going) project, `Dabble` is a shell to demonstrate how a common shel
 
 ## Executing the Program
 
-To run `Dabble`, you must have go installed. Dabble was created on a MacOS with `go version go1.13.5 darwin/amd64` 
+To run `Dabble`, you must have go installed. Dabble was created on a MacOS with Go version `go1.13.5 darwin/amd64` 
 
 To run: `go run dabble`
 
@@ -53,6 +53,7 @@ And you will see the following,
 	 [+=+] hello :Say hello
 
  [+] Enter a system command (help) :
+ 
 ```
 
 ## Functionality
@@ -79,6 +80,7 @@ Data
 ```
 
 * Find a range of random numbers in a defined range.
+
 ```
  [+] Enter a system command (help) :ran
 	 We will find n random numbers between lower a and upper bounds
@@ -96,7 +98,12 @@ Data
 9
 ```
 
+* Check the directory where Dabble was run.
 
+```
+[+] Enter a system command (help) :pwd
+/Users/obonhamcarter/projects/dabble/repo/dabble
+```
 
 ## A work in progress
 
