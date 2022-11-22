@@ -80,11 +80,14 @@ func getPrime() {
 		fmt.Println("\t Both Numbers must be greater than 2.")
 		return
 	}
+	fmt.Print("\nPrimes")
+
 	if max <= min {
 		fmt.Print("\n\t [-] Error of bounds values. ")
 		return
 	}
 	for min <= max {
+
 		isPrime := true
 		for i := 2; i <= int(math.Sqrt(float64(min))); i++ {
 			if min%i == 0 {
@@ -92,8 +95,9 @@ func getPrime() {
 				break
 			}
 		}
+
 		if isPrime {
-			fmt.Printf("\n %d ", min) //print out the primes on own line
+			fmt.Printf("\n%d ", min) //print out the primes on own line
 		}
 		min++
 	}
@@ -178,6 +182,7 @@ func getRandomNumber() {
 	fmt.Scan(&nNums)
 
 	number_slice := []int{} // define a slice (i.e., a list)
+	fmt.Print("\nData")
 
 	for i := 0; i < nNums; i++ {
 		randomNum := rand.Intn(max-min) + min
