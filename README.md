@@ -30,7 +30,7 @@ In this (on going) project, `Dabble` is a shell to demonstrate how a common shel
 
 ## Executing the Program
 
-To run `Dabble`, you must have go installed. Dabble was created on a MacOS with Go version `go1.13.5 darwin/amd64` 
+To run `Dabble`, you must have Go (also called "Golang") installed. Dabble was created on a MacOS with Go version `go1.13.5 darwin/amd64` 
 
 To run: `go run dabble`
 
