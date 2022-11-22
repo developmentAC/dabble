@@ -1,6 +1,8 @@
 package main
 
-// ref: https://www.youtube.com/watch?v=C8LgvuEBraI
+// author: Oliver Bonham-Carter
+// mail: obonhamcarter@allegheny.edu
+// comment: uh-huh
 
 import (
 	"bufio"
@@ -77,13 +79,13 @@ func getPrime() {
 	fmt.Scan(&max)
 
 	if min < 2 || max < 2 {
-		fmt.Println("\t Both Numbers must be greater than 2.")
+		fmt.Println("\t Both Numbers must be greater than 2")
 		return
 	}
 	fmt.Print("\nPrimes")
 
 	if max <= min {
-		fmt.Print("\n\t [-] Error of bounds values. ")
+		fmt.Print("\n\t [-] Error of bounds values")
 		return
 	}
 	for min <= max {
@@ -126,9 +128,7 @@ func getArguments(command string) {
 	}
 
 	if command == "details" {
-		// Taking input from user
 		fmt.Print("\n\t [+] Enter Your First Name: ")
-		// declare variable name and type, then assign user input to variable
 		var first string
 		fmt.Scan(&first)
 
@@ -147,7 +147,6 @@ func getArguments(command string) {
 		getRandomNumber()
 	}
 
-	// return command
 }
 
 func getRandomNumber() {
@@ -207,23 +206,22 @@ func numAnalysis(number_slice []int) {
 
 }
 
-// Note:
-// check https://zetcode.com/golang/word-frequency/ for finding frequencies of words
+// Note: Frequency of number value analysis:
+// ideas: https://zetcode.com/golang/word-frequency/ for finding frequencies of words
 
-// Another option to check;
-// https://www.tutorialspoint.com/write-a-golang-program-to-find-the-frequency-of-each-element-in-an-array#
+// ideas: https://www.tutorialspoint.com/write-a-golang-program-to-find-the-frequency-of-each-element-in-an-array#
 
 func getPath() {
 	path, err := os.Getwd()
 	if err != nil {
 		log.Println(err)
 	}
-	fmt.Println(path) // for example /home/user
+	fmt.Println(path)
 	// return path
 }
 
 func drawSquare(count int) {
-	/// draw a square in x's
+	/// draw a square in X's
 
 	for i := 0; i < count; i++ {
 		for j := 0; j < count; j++ {
@@ -232,57 +230,3 @@ func drawSquare(count int) {
 		fmt.Print("\n")
 	}
 }
-
-////////////////////////////////////////////////////////////
-
-////////////////////////////////////////////////////////////
-
-////////////////////////////////////////////////////////////
-
-////////////////////////////////////////////////////////////
-
-// junk bin. Can any of this code be helpful in someway here?!
-// x := 5
-// y := 7
-// sum := x + y
-// fmt.Print("\t [+] ", x, " + ", y, " = ", sum, "\n")
-// // fmt.Print(" sum: %T\n", sum)
-// fmt.Print("\t [+] The type of sum is :", reflect.TypeOf(sum), "\n")
-// create an object called a 'struct'
-// type studentThings struct {
-// 	typeOfMachine     string
-// 	writingInstrument string
-// 	favouriteSong     string
-// 	favouriteColour   string
-// 	favouriteNumber   int
-// }
-
-// // create a map which are similar to a dictionary as in python
-
-// vertices := make(map[string]int)
-// vertices["triangle"] = 3
-// vertices["square"] = 4
-// vertices["dodecagon"] = 12
-// vertices["myShapeOfMadness"] = 1010101
-
-// fmt.Print("\n\t [+] My vertices are :", vertices)
-
-// //https://freshman.tech/snippets/go/iterating-over-slices/
-// for i := range vertices {
-// 	fmt.Print(i, "\n")
-// }
-
-// delete(vertices, "myShapeOfMadness")
-// fmt.Print("\n\t [+] Item Removed.  My vertices are now :", vertices)
-
-// firstName, lastName := "Oliver", "Bonham-Carter"
-// fmt.Print("\n\t [+] my first and last name is : ", firstName, " ", lastName, "\n")
-// student := studentThings{
-// 	typeOfMachine:     "Mac",
-// 	writingInstrument: "pencil",
-// 	favouriteSong:     "Born to be bad",
-// 	favouriteColour:   "green",
-// 	favouriteNumber:   13}
-// fmt.Print("\t [+] A print out of the object student: ", student)
-
-// fmt.Print("\n\t [+] Favourite colour of student is: ", student.favouriteColour)
