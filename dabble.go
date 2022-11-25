@@ -2,7 +2,7 @@ package main
 
 // author: Oliver Bonham-Carter
 // mail: obonhamcarter@allegheny.edu
-// date: 21 November 2022
+// date: 25 November 2022
 // comment: A basic shell to learn how a shell might work and to spend some quality time with Golang. Uh-huh
 
 import (
