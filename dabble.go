@@ -198,7 +198,6 @@ func getRandomNumber() {
 
 }
 
-
 func findFrequency(arr []int, num int){
 	count := 0
 	// fmt.Print("length of array: ",len(arr))
@@ -211,12 +210,6 @@ func findFrequency(arr []int, num int){
 	freq = (float64(count)) / (float64(len(arr)))
 	fmt.Printf("\n\t    Frequency( %d ) = %f", num, freq)
  }
-
-
-// Note: Frequency of number value analysis:
-// ideas: https://zetcode.com/golang/word-frequency/ for finding frequencies of words
-
-// ideas: https://www.tutorialspoint.com/write-a-golang-program-to-find-the-frequency-of-each-element-in-an-array#
 
 func getPath() {
 	path, err := os.Getwd()
