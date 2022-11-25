@@ -190,22 +190,28 @@ func getRandomNumber() {
 		number_slice = append(number_slice, randomNum)
 		fmt.Print("\n", randomNum)
 	}
-	// fmt.Print("\n Random numbers : ", number_slice)
-	// numAnalysis(number_slice) TODO
-}
-
-func numAnalysis(number_slice []int) {
-	// fmt.Print("\n\t [+] numAnalysis says list is : ", number_slice)
-	// measure entropy
-	numProbs_slice := make(map[int]int) // we record each value and its number of occurrences
-	// print out numbers
-	for i := range number_slice {
-		// fmt.Print("\n", i, " -maps-> ", number_slice[i]) // debugging
-		fmt.Print("\n", number_slice[i])
-		numProbs_slice[i] = number_slice[i]
+	// check the randomness of the numbers
+	for i := range number_slice{
+		// fmt.Print("\nTesting: ",number_slice[i])
+		findFrequency(number_slice, number_slice[i])
 	}
 
 }
+
+
+func findFrequency(arr []int, num int){
+	count := 0
+	// fmt.Print("length of array: ",len(arr))
+	for _, item := range arr{
+	   if item == num{
+		  count++
+	   }
+	}
+	var freq float64
+	freq = (float64(count)) / (float64(len(arr)))
+	fmt.Printf("\n\t    Frequency( %d ) = %f", num, freq)
+ }
+
 
 // Note: Frequency of number value analysis:
 // ideas: https://zetcode.com/golang/word-frequency/ for finding frequencies of words
