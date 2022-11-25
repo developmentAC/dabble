@@ -207,7 +207,7 @@ func findFrequency(arr []int, num int){
 	   }
 	}
 	var freq float64
-	freq = (float64(count)) / (float64(len(arr)))
+	freq = (float64(count)) / (float64(len(arr))) //convert the numbers to a floats
 	fmt.Printf("\n\t    Frequency( %d ) = %f", num, freq)
  }
 
