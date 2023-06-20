@@ -2,7 +2,8 @@ package main
 
 // author: Oliver Bonham-Carter
 // mail: obonhamcarter@allegheny.edu
-// date: 25 November 2022
+// date: 20 June 2023
+// Version: 0.7.0
 // comment: A basic shell to learn how a shell might work and to spend some quality time with Golang. Uh-huh
 
 import (
@@ -182,34 +183,35 @@ func getRandomNumber() {
 	fmt.Scan(&nNums)
 
 	number_slice := []int{} // define a slice (i.e., a list)
-	fmt.Print("\nData")
+	fmt.Print("\n\t Data")
 
 	for i := 0; i < nNums; i++ {
 		randomNum := rand.Intn(max-min) + min
 		// 	number_slice[i] = randomNum
 		number_slice = append(number_slice, randomNum)
-		fmt.Print("\n", randomNum)
+		fmt.Print("\n\t ", randomNum)
 	}
+	fmt.Print("\n")
 	// check the randomness of the numbers
-	for i := range number_slice{
+	for i := range number_slice {
 		// fmt.Print("\nTesting: ",number_slice[i])
 		findFrequency(number_slice, number_slice[i])
 	}
 
 }
 
-func findFrequency(arr []int, num int){
+func findFrequency(arr []int, num int) {
 	count := 0
 	// fmt.Print("length of array: ",len(arr))
-	for _, item := range arr{
-	   if item == num{
-		  count++
-	   }
+	for _, item := range arr {
+		if item == num {
+			count++
+		}
 	}
 	var freq float64
 	freq = (float64(count)) / (float64(len(arr))) //convert the numbers to a floats
-	fmt.Printf("\n\t    Frequency( %d ) = %f", num, freq)
- }
+	fmt.Printf("\n\t Frequency( %d ) = %f", num, freq)
+}
 
 func getPath() {
 	path, err := os.Getwd()
