@@ -1,5 +1,5 @@
 # Dabble: A basic shell written in GO
-## Date: 20 June 2023
+## Date: 20 March 2025
 ### Oliver Bonham-Carter, [Allegheny College](https://allegheny.edu/)
 ### email: obonhamcarter@allegheny.edu
 
@@ -26,7 +26,10 @@ OS with command. Naturally, a file in the path could be run to achieve the same
 result but when using a shell, parts of the individual parts of the shell
 may be untied in some way to work together.
 
-In this (on going) project, `Dabble` is a shell to demonstrate how a common shell might work. In addition, the code allows for functions to be shred between commands.
+This project teaches you about creating shells where system commands and your own
+functions are integrated into one user experience. Cool, right?
+
+In this (on going) project, `Dabble` is a shell to demonstrate how a common shell might work. In addition, the code allows for functions to be shared between commands.
 
 ## Executing the Program
 
